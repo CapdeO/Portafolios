@@ -1,0 +1,250 @@
+html {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 22px;
+}
+body {
+	background-image: url(../img/1-vert.jpg);
+	background-size: cover;
+	background-attachment: initial;
+	background-repeat: repeat-y;
+	
+	/*background-color: #24394c;*/
+	color: #9cb3c9;
+	text-align: center;
+}
+header {
+	background: linear-gradient(90deg, rgba(2,2,15,1) 0%, rgba(7,7,66,1) 50%, rgba(2,2,15,1) 100%);
+	height: 55px;
+	display: flex;
+	position: sticky;
+	top: 0;
+	align-items: center;
+	justify-content: space-around;
+	margin: ;
+	padding: 0 auto;
+	opacity: 87%;
+}
+
+main {
+	margin: 0 10%;
+}
+.texto-header {
+	color: white;
+	transition: 0.5s;
+	text-decoration: none;
+}
+.texto-header:hover {
+	text-shadow: 0px 0px 18px #50CEB7;
+	font-size: 24px;
+	color: white;
+}
+header p {
+	font-weight: bold;
+}
+header nav ul {
+	display: flex;
+}
+header nav ul li a {
+	margin-right: 1rem;
+	font-size: 18px;
+}
+header nav ul li a:hover {
+	text-decoration: underline;
+}
+header nav ul li a:before {
+	content: "❯ ";
+}
+
+.inicio {
+	margin: 3em auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.descripcion {
+	text-align: initial;
+}
+.titulo {
+	font-size: 35pt;
+	color: white;
+	font-weight: bold;
+	line-height: 1.5;
+}
+.subtitulo2 {
+	font-size: 22pt;
+	font-weight: bold;
+}
+.contenedor-redes {
+	margin: 1em auto;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 3em;
+}
+.redes {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	align-items: center;
+}
+.logo:first-child {
+	margin-right: 1em;
+}
+.logo {
+	height: 50px;
+	transition: 0.5s;
+}
+.logo:hover {
+	height: 75px;
+	transform: rotate(360deg);
+}
+
+.curriculum {
+	display: flex;
+	justify-content: center;
+	height: 3em;
+	align-items: center;
+}
+.btn-curr {
+	font-size: 24px;
+	background-image: linear-gradient(to right,#e052a0,#f15c41);
+	color: white;
+	transition: 0.5s;
+	padding: 12px auto;
+	transform: 0.5s;
+	border-width: 0;|
+}
+.btn-curr:hover {
+	background: linear-gradient(250deg, rgba(104,209,210,1) 0%, rgba(20,87,177,1) 100%);
+	font-size: 28px;
+}
+
+.foto {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 35%;
+}
+
+#photo {
+	border-radius: 100%;
+	transition: 0.5s;
+	height: 90%;
+}
+#photo:hover {
+	height: 100%;
+	transition: 0.5s;
+	box-shadow: 0px 0px 15px 2px #9cb3c9;
+	transform: rotate(7deg);
+}
+.sobremi {
+	margin: 4em 0;
+	text-align: initial;
+	width: 70%;
+}
+.subtitulo {
+	font-size: 35pt;
+	color: white;
+	margin: 1rem 0;
+	font-weight: bold;
+}
+.textocuerpo {
+	font-size: 17pt;
+}
+
+
+.skills {
+	margin: 2em 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+h2 {
+	text-align: left;
+	font-size: 20px;
+
+}
+
+.skill {
+	margin: 10px;
+	height: 222px;
+	width: 170px;
+	display: flex;
+	align-items: flex-end;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+	box-shadow: 0px 0px 6px 0px #FFFFFF;
+	transition: 0.5s;
+}
+.skill:hover {
+	background-color: rgba(255, 204, 0, 0.5);
+	transform: rotate(5deg);
+
+}
+.inner {
+	margin: 0 0 25px 25px;
+}
+.logo2 {
+	display: flex;
+	height: 50px;
+	justify-content: left;
+}
+.externo {
+	justify-content: center;
+}
+.formacion {
+	margin: 10px;
+	height: 320px;
+	width: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+	box-shadow: 0px 0px 6px 0px #FFFFFF;
+	transition: 0.5s;
+}
+.form {
+	width: 250px;
+	color: white;
+	font-weight: bold;
+	margin-left: 10px;
+}
+.año {
+	text-align: left;
+	font-weight: bold;
+	margin-left: 10px;
+}
+.formacion:hover {
+	background-color: rgba(255, 204, 0, 0.5);
+	transform: rotate(5deg);
+}
+#insti {
+	height: 200px;
+}
+
+#udemy {
+	height: 200px;
+}
+#encrip {
+	width: 40%;
+}
+
+
+/*tablet*/
+@media (max-width: 768px) {
+	#encrip {
+		width: 70%;
+	}
+}
+
+/*mobile*/
+@media (max-width: 425px) {
+	#encrip {
+		width: 80%;
+	}
+}
+
+
