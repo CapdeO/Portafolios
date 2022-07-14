@@ -254,9 +254,8 @@ h2 {
 	text-align: left;
 	padding: 20px;
 	margin: 30px auto;
-
 	display: flex;
-	width: 100%;
+	width: 95%;
 	justify-content: center;
 	
 }
@@ -306,7 +305,7 @@ footer {
 	header {
 		flex-direction: column;
 		position: relative;
-		gap: 10px;	
+		gap: 20px;	
 	}
 	nav {
 		flex-direction: column;
