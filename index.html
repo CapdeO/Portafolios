@@ -222,13 +222,16 @@
 				<p>Completá este formulario y me comunico con vos lo antes posible.</p>
 				<br>
 				
-				<form action="">
-				<input class="input" type="text" placeholder="Nombre y Apellido"><br>
-				<input class="input" type="text" placeholder="E-mail"><br>
-				<input class="input" type="text" placeholder="Asunto"><br>
-				<textarea class="input" name="" id="" cols="30" rows="3" placeholder="Mensaje"></textarea>
-				<button class="btn-curr" onclick="alertar();">Enviar mensaje</button>
+				<form id="formul" action="">
+					<label for="name">Nombre y Apellido</label>
+					<input name="name" type="text" id="name" class="input" placeholder="Juan Perez" required><br>
+					<label for="email">Correo electrónico</label>
+					<input name="email" type="text" id="email" class="input"  placeholder="juan@gmail.com" required><br>
+					<label for="message">Mensaje</label>
+					<textarea name="message" id="message" class="input" cols="30" rows="3" placeholder="Te contacto para.." required></textarea>
+					<button type="submit" class="btn-curr" >Enviar mensaje</button>
 				</form>
+				<a href="mailto:capde22@gmail.com" id="trucazo"></a>
 			</div>
 		</div>
 		
@@ -247,8 +250,16 @@
 	</footer>
 </body>
 <script type="text/javascript">
-	function alertar() {
-		alert("¡Trabajo en eso!");
+	const $formul = document.querySelector('#formul')
+	const $buttonMailto = document.querySelector('#trucazo')
+
+	$formul.addEventListener('submit', handleSubmit)
+
+	function handleSubmit(event) {
+		event.preventDefault()
+		const formul = new FormData(this)
+		$buttonMailto.setAttribute('href', `mailto:capde22@gmail.com?subject=Nombre: ${formul.get('name')} Correo: ${formul.get('email')}&body=${formul.get('message')}`)
+		$buttonMailto.click()
 	}
 </script>
 </html>
